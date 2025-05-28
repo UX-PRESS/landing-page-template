@@ -1,19 +1,21 @@
-import React from 'react'
-import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
-import Main from './components/layout/Main'
-import Button from './components/ui/button'
+import React from 'react';
+import HomePage from './pages/Home'; 
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import Main from './components/layout/Main';
+import FeaturesSection from './sections/FeaturesSection';
 
-export default function App() {
-   return (
+function App() {
+  return (
     <>
       <Header />
       <Main>
-        <h1>Hello World</h1>
-        <Button>Click me</Button>
-        {/* Aqui entram as seções (Hero, About, etc.) */}
+        <HomePage/>
+        <FeaturesSection />
       </Main>
       <Footer />
     </>
-  )
+  );
 }
+
+export default App;
