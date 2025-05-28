@@ -1,6 +1,11 @@
 import React from 'react'
-import styles from './Button.module.css'
 
-export default function Button({ children }) {
-  return <button className={styles.btn}>{children}</button>
+export default function Button({ children, className }) {
+  return (
+    <button
+      className={`bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition ${className}`}
+    >
+      {children}
+    </button>
+  )
 }

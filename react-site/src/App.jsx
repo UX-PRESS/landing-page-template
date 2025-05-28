@@ -1,21 +1,19 @@
-import React from 'react';
-import HomePage from './pages/Home'; 
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import Main from './components/layout/Main';
-import FeaturesSection from './sections/FeaturesSection';
+import React from 'react'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
+import Main from './components/layout/Main'
+import HomePage from './pages/Home'
 
 function App() {
   return (
     <>
       <Header />
       <Main>
-        <HomePage/>
-        <FeaturesSection />
+        <HomePage />
       </Main>
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

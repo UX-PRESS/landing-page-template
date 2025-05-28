@@ -1,18 +1,21 @@
-import React from 'react';
-import Container from '../components/layout/Container';
-import Grid from '../components/layout/Grid';
+import React from 'react'
+import Card from '../components/ui/Card'
 
 export default function FeaturesSection() {
   return (
-    <section>
-      <Container>
-        <h2>Features</h2>
-        <Grid cols={3}>
-          <div>Feature 1</div>
-          <div>Feature 2</div>
-          <div>Feature 3</div>
-        </Grid>
-      </Container>
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+      <Card
+        title="Handmade Candles"
+        description="Natural soy candles with local floral scents, hand-poured with love."
+      />
+      <Card
+        title="Organic Teas"
+        description="Carefully selected blends of herbs grown in the lush Irish countryside."
+      />
+      <Card
+        title="Local Ceramics"
+        description="Unique handmade pottery crafted by artists from County Cork."
+      />
     </section>
-  );
+  )
 }
