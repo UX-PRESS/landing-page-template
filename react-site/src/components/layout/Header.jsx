@@ -2,11 +2,10 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header className="header">
-      <h1>Landing Page Title</h1>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
+    <header className="bg-green-800 text-white p-4 flex justify-between">
+      <nav className="space-x-4">
+        <a href="#features" className="hover:underline">Features</a>
+        <a href="#contact" className="hover:underline">Contact</a>
       </nav>
     </header>
   )

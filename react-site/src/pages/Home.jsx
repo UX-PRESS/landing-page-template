@@ -1,12 +1,12 @@
-import React from "react";
-import HeroSection from "../sections/HeroSection";
-import ProductHighlightsSection from "../sections/ProductHighlightsSection";
+import React from 'react'
+import HeroSection from '../sections/HeroSection'
+import FeaturesSection from '../sections/FeaturesSection'
 
 export default function HomePage() {
   return (
-    <main>
+    <>
       <HeroSection />
-      <ProductHighlightsSection />
-    </main>
-  );
+      <FeaturesSection />
+    </>
+  )
 }
