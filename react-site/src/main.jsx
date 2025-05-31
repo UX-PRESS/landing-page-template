@@ -8,3 +8,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 )
+export default function Main({ children }) {
+  return (
+    <main className="pt-20"> {/* Ajuste o padding conforme altura da navbar */}
+      {children}
+    </main>
+  );
+}
